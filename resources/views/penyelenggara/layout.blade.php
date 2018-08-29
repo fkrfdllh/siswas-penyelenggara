@@ -22,15 +22,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <!-- <style type="text/css">
-    	canvas {
-    		max-width: 100%;
-    		max-height: 100%;
-    		width: 50%;
-    		height: 50%
-    	}
-    </style> -->
-
+    <!-- Custom JS -->
     <script type="text/javascript">
 		$(document).ready(function() {
 			// chart.canvas.parentNode.style.height = '100px';
@@ -61,6 +53,15 @@
 			});
 		});
 	</script>
+
+	<!-- Custom CSS -->
+	<!-- <style type="text/css">
+		body {
+			background-image: url('{{ asset('images/scenery.jpeg') }}');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	</style> -->
 </head>
 <body>
     @yield('header')
