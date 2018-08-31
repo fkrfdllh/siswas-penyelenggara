@@ -31,7 +31,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col">
-				<div class="jumbotron">
+				<div class="jumbotron bg-light">
 					<div class="card">
 						<div class="card-body">
 							<div class="row mx-auto">
@@ -84,7 +84,7 @@
 				</div>
 			</div>
 			<div class="col">
-				<div class="jumbotron">
+				<div class="jumbotron bg-light">
 					<div class="card">
 						<div class="card-body">
 							<div class="row mx-auto">

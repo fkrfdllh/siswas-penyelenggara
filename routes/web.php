@@ -11,9 +11,9 @@
 |
 */
 Route::get('/', function () {
-    return view('penyelenggara.dashboard');
+    return view('welcome');
 });
 
-// Auth::routes();
+Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
