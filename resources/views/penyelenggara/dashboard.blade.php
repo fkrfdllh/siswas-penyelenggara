@@ -5,27 +5,16 @@
 @section('header')
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<img src="{{ asset('images/bappebti.png') }}" class="img-fluid" style="max-width: 10%; max-height: 10%">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Disabled</a>
-				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Anda Masuk Sebagai User</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="#">Logout</a>
 					</div>
 				</li>
@@ -39,45 +28,64 @@
 
 @section('content')
 
-	<div class="row">
-		<div class="col">
-			<div class="container">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
 				<div class="jumbotron">
-					<div class="row">
-						<div class="col-5 offset-3">
-							<canvas class="align-self-center" id="pieChart" width="200px" height="200px"></canvas>
+					<div class="card">
+						<div class="card-body">
+							<div class="row align-items-center justify-content-center">
+								<div class="col-3">
+									<h4>Log Jurnal</h4>
+								</div>	
+								<div class="col-9">
+									<input id="datepicker" type="text">
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col">
-			<div class="container">
-				<div class="jumbotron">
-					<table class="table table-hoverable">
-						<thead>
+					<br>
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<canvas id="statusChart"></canvas>
+						</div>
+					</div>
+					<br>
+					<table class="table table-bordered table-light">
+						<thead class="bg-secondary text-light">
 							<tr>
-								<th scope="col">Kategori</th>
-								<th scope="col">Warning</th>
+								<th scope="col">No.</th>
+								<th scope="col">Penyelenggara SPA</th>
+								<th scope="col">Sistem Trading</th>
+								<th scope="col">Status</th>
 							</tr>
 						</thead>
-
 						<tbody>
 							<tr>
-								<td>Sakit</td>
-								<td>Menyakitkan</td>
+								<th scope="row">1</th>
+								<td>PT Varia Solusi Integrasi</td>
+								<td>Meta Trader 4</td>
+								<td class="bg-success text-light">Lengkap</td>
 							</tr>
 							<tr>
-								<td>Enak</td>
-								<td>Mengenakkan</td>
+								<th scope="row">2</th>
+								<td>PT IDStar</td>
+								<td>Meta Trader 4</td>
+								<td class="bg-success text-light">Lengkap</td>
 							</tr>
 							<tr>
-								<td>Enak</td>
-								<td>Mengenakkan</td>
+								<th scope="row">3</th>
+								<td>PT Facebook</td>
+								<td>Meta Trader 4</td>
+								<td class="bg-danger text-light">Tidak Lengkap</td>
 							</tr>
 						</tbody>
 					</table>
+				</div>
+			</div>
+			<div class="col">
+				<div class="jumbotron">
+					
 				</div>
 			</div>
 		</div>

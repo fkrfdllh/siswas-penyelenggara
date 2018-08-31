@@ -14,6 +14,7 @@
     <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/Chart.min.js') }}"></script>
+    <script src="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js" type="text/javascript"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -21,26 +22,25 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
     <!-- Custom JS -->
     <script type="text/javascript">
 		$(document).ready(function() {
-			// chart.canvas.parentNode.style.height = '100px';
-
-
-			var ctx = document.getElementById("pieChart").getContext("2d");
+			var ctx = document.getElementById("statusChart").getContext("2d");
 
 			var pieChart = new Chart(ctx, {
 				responsive: true,
 				maintainAspectRatio: false,
 				type: 'pie',
 				data: {
-					labels: ["Aktif", "Tidak Aktif"],
+					labels: ["Belum Ada", "Belum Lengkap", "Lengkap"],
 					datasets: [{
-						data: [90, 10],
+						data: [15, 0, 85],
 						backgroundColor: [
-							'rgb(46, 204, 113)',
 							'rgb(231, 76, 60)',
+							'rgba(241, 196, 15,1.0)',
+							'rgb(46, 204, 113)',
 						],
 					}],
 					
@@ -53,17 +53,15 @@
 			});
 		});
 	</script>
-
-	<!-- Custom CSS -->
-	<!-- <style type="text/css">
-		body {
-			background-image: url('{{ asset('images/scenery.jpeg') }}');
-			background-size: cover;
-			background-repeat: no-repeat;
-		}
-	</style> -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#datepicker').datepicker({
+				format: 'dd mmmm yyyy'
+			});
+		});
+	</script>
 </head>
-<body>
+<body class="bg-white">
     @yield('header')
 
     @yield('content')
