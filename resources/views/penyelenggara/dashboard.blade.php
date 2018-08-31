@@ -34,12 +34,12 @@
 				<div class="jumbotron">
 					<div class="card">
 						<div class="card-body">
-							<div class="row align-items-center justify-content-center">
+							<div class="row mx-auto">
 								<div class="col-3">
 									<h4>Log Jurnal</h4>
 								</div>	
 								<div class="col-9">
-									<input id="datepicker" type="text">
+									<input id="datepicker" type="text" disabled>
 								</div>
 							</div>
 						</div>
@@ -85,7 +85,57 @@
 			</div>
 			<div class="col">
 				<div class="jumbotron">
-					
+					<div class="card">
+						<div class="card-body">
+							<div class="row mx-auto">
+								<div class="col-4">
+									<h4>Early Warning</h4>
+								</div>	
+								<div class="col-8">
+									<input id="datepicker2" type="text" disabled>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<table class="table table-striped table-light">
+						<tr>
+							<td class="text-danger">Server Penyelenggara Luar Negeri</td>
+							<td class="ml-auto text-danger"><span class="badge badge-pill bg-warning">2</span></td>
+						</tr>
+						<tr>
+							<td class="text-danger">Harga Tidak Sesuai</td>
+							<td class="ml-auto text-danger"><span class="badge badge-pill bg-warning">2.403</span></td>
+						</tr>
+						<tr>
+							<td>Spread Tidak Wajar</td>
+							<td class="ml-auto text-white"><span class="badge badge-pill bg-secondary">0</span></td>
+						</tr>
+						<tr>
+							<td class="text-danger">Produk Belum Terdaftar</td>
+							<td class="ml-auto text-danger"><span class="badge badge-pill bg-warning">655</span></td>
+						</tr>
+						<tr>
+							<td class="text-danger">Plugin Baru</td>
+							<td class="ml-auto text-danger"><span class="badge badge-pill bg-warning">47</span></td>
+						</tr>
+						<tr>
+							<td>Log Tidak Lengkap</td>
+							<td class="ml-auto text-white"><span class="badge badge-pill bg-secondary">0</span></td>
+						</tr>
+						<tr>
+							<td>Fraksi Transaksi</td>
+							<td class="ml-auto text-white"><span class="badge badge-pill bg-secondary">0</span></td>
+						</tr>
+						<tr>
+							<td>Volume kurang dari minimum</td>
+							<td class="ml-auto text-white"><span class="badge badge-pill bg-secondary">0</span></td>
+						</tr>
+						<tr>
+							<td class="text-danger">Volume lebih dari maksimum</td>
+							<td class="ml-auto text-danger"><span class="badge badge-pill bg-warning">232</span></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>

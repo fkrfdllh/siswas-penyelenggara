@@ -60,6 +60,15 @@
 			});
 		});
 	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var a = new Date();
+
+			$('#datepicker2').datepicker({
+				format: 'dd mmmm yyyy',
+			});
+		});
+	</script>
 </head>
 <body class="bg-white">
     @yield('header')
