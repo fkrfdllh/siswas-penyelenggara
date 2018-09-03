@@ -18,11 +18,21 @@
                                     <i class="material-icons prefix">account_circle</i>
                                     <input id="icon_prefix1" type="text" name="username" class="validate" required autofocus></input>
                                     <label for="icon_prefix1">Username</label>
+                                    @if ($errors->has('username'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('username') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                                 <div class="input-field col s10 offset-s1">
                                     <i class="material-icons prefix">lock</i>
                                     <input id="icon_prefix2" type="password" name="password" class="validate" required></input>
                                     <label for="icon_prefix2">Password</label>
+                                    @if ($errors->has('password'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('password') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                                 <div class="input-field col s10 offset-s1">
                                     <button class="col s12 waves-effect waves-dark btn light-blue">SIGN IN</button> 
