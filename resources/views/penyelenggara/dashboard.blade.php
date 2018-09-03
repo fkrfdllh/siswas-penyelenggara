@@ -4,8 +4,8 @@
 
 @section('header')
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<img src="{{ asset('images/bappebti.png') }}" class="img-fluid" style="max-width: 10%; max-height: 10%">
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #F9690E">
+		<!-- <img src="{{ asset('images/bappebti.png') }}" class="img-fluid" style="max-width: 10%; max-height: 10%"> -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -13,7 +13,7 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Anda Masuk Sebagai User</a>
+					<a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Anda Masuk Sebagai User</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="#">Logout</a>
 					</div>
@@ -31,7 +31,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col">
-				<div class="jumbotron bg-light">
+				<div class="jumbotron bg-light" style="border-style: solid; border-color: #BDC3C7;">
 					<div class="card">
 						<div class="card-body">
 							<div class="row mx-auto">
@@ -84,7 +84,7 @@
 				</div>
 			</div>
 			<div class="col">
-				<div class="jumbotron bg-light">
+				<div class="jumbotron bg-light" style="border-style: solid; border-color: #BDC3C7;">
 					<div class="card">
 						<div class="card-body">
 							<div class="row mx-auto">
