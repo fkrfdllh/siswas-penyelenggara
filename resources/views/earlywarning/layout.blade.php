@@ -18,6 +18,8 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/materialize.min.css') }}">
 
+		@yield('js')
+
 	</head>
 
 	<body>
